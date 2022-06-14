@@ -1,16 +1,20 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 .header, .footer {
     background-color: #1f2937;
     border-color: #1f2937;
     display: flex;
-    padding: 64px;
-    width: 100%;
+    padding-top: 0;
+    padding-left: 64px;
+    padding-right: 64px;
 }
 .header {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 10px;
 }
 ul {
     list-style: none;
@@ -30,14 +34,17 @@ ul, .hero2tex, .footer {
 .upper {
     background-color: #1f2937;
     padding: 64px;
+    padding-top: 20px;
     display: flex;
 }
 .text {
     width: 50%;
     padding-right: 64px;
 }
-.cat {
-    width: 50%;
+#cat {
+    object-fit: contain;
+    width: 500px;
+
 }
 h1 {
     font-size: 48px;
@@ -51,12 +58,16 @@ h2 {
 }
 .bmid {
     background-color: #e5e7eb;
+    padding: 60px;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 .container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding-bottom: 60px;
 }
 .imgsub {
     display: flex;
@@ -66,6 +77,8 @@ h2 {
 }
 .imgsub img {
     max-width: 128px;
+    border-radius: 10px;
+    border: 5px solid #3882f6;
 }
 .quote {
     font-size: 36px;
@@ -83,5 +96,32 @@ button {
 button, .words {
     background-color: #3882f6;
     color: #f9faf8;
+}
+.speaker {
+    text-align: right;
+}
+.bbox {
+    display: flex;
+    flex-direction: row;
+    padding: 2em 0;
+    margin: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #3882f6;
+    border-radius: 12px;
+}
+.bbox button {
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid white;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
